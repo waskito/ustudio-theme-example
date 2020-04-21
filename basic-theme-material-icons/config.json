@@ -1,0 +1,16 @@
+{
+  "fields": [
+    {
+      "uid": "primary_color",
+      "type_uid": "color",
+      "label": "Primary color",
+      "default_value": "#EE5324"
+    },
+    {
+      "uid": "secondary_color",
+      "type_uid": "color",
+      "label": "Secondary color",
+      "default_value": "#F1EFE6"
+    }
+  ]
+}

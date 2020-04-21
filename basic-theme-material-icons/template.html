@@ -1,0 +1,56 @@
+<meta name="viewport" content="width=device-width, user-scalable=no" />
+
+<div class="layer" data-player-container="fullscreen">
+  <div class="layer player-container" data-player-container="player" data-player-prevent-contextmenu="true" data-player-interaction="true"></div>
+  <div class="layer player-header start-hidden" data-player-states="playing,paused,loading,swapping" data-player-state-transition="fade" data-player-interaction="true"></div>
+  <div class="layer player-controls start-hidden" data-player-states="playing,paused,loading,swapping" data-player-state-transition="fade" data-player-interaction="true">
+    <div class="player-control-bar start-hidden">
+      <div class="player-control play-pause touch-disabled" data-player-actions="click=play-pause-toggle" data-player-touch-classes="touch-enabled,touch-disabled" data-player-play-state="playing">
+        <i class="fa fa-play"></i>
+        <i class="fa fa-pause"></i>
+      </div>
+      <div class="player-control duration-container">
+        <span class="current-time" data-player-text="current-time">0:00</span>
+        <span class="duration-separator">|</span>
+        <span class="duration" data-player-text="duration">0:31</span>
+      </div>
+      <div class="progress-container">
+        <div data-player-width="progress" class="progress-bar"></div>
+        <div class="progress-slider ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" data-player-slider="progress" aria-disabled="false"><a class="ui-slider-handle ui-state-default ui-corner-all" href="#"></a></div>
+      </div>
+      <div class="player-control volume touch-disabled" data-player-actions="click=mute-unmute-toggle" data-player-touch-classes="touch-enabled,touch-disabled" data-player-mute-state="unmuted">
+        <i class="fa fa-volume-up"></i>
+        <i class="fa fa-volume-off"></i>
+      </div>
+      <div class="player-control captions touch-disabled" data-player-captions="true" data-player-actions="click=captions-toggle" data-player-touch-classes="touch-enabled,touch-disabled" data-player-captions-state="hidden">
+        <i class="fa fa-cc"></i>
+      </div>
+      <div class="player-control fullscreen touch-disabled" data-player-actions="click=fullscreen-toggle" data-player-touch-classes="touch-enabled,touch-disabled" data-player-fullscreen-state="normal">
+        <i class="fa fa-expand"></i>
+        <i class="fa fa-compress"></i>
+      </div>
+    </div>
+  </div>
+  <div class="layer loading-layer start-hidden" data-player-states="loading,swapping,initializing" data-player-state-transition="fade">
+    <div class="loading-indicator">
+      <i class="large-loading-indicator fa fa-circle-o-notch fa-spin"></i>
+    </div>
+  </div>
+  <div class="layer poster-background start-hidden" data-player-states="waiting,initializing"></div>
+  <div class="layer poster-container start-hidden" data-player-container="poster" data-player-states="waiting,initializing" data-player-state-transition="fade"></div>
+  <div class="layer poster-controls start-hidden" data-player-states="waiting" data-player-interaction="true" data-player-state-transition="fade" data-player-actions="click=play">
+    <div class="poster-play-button" data-player-actions="click=play">
+      <i class="fa fa-play-circle"></i>
+    </div>
+  </div>
+  <div class="layer error-layer start-hidden" data-player-states="error" data-player-state-transition="fade" data-player-error="true">
+    <div class="error-container">
+      <div class="error-icon">
+        <i class="large-error-indicator fa fa-exclamation-triangle"></i>
+      </div>
+      <div class="error-message" data-player-error-message="true">
+        There was an error with this video.
+      </div>
+    </div>
+  </div>
+</div>
